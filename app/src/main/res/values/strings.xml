@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">log</string>
+
+
+
+
+
+
+    <string name="branch_name">Branch</string>
+
+    <string-array name="Branch_array">
+        <item>CSE</item>
+        <item>IT</item>
+        <item>EC</item>
+        <item>MECH</item>
+        <item>CIVIL</item>
+    </string-array>
+
+    <string name="gender_name">Gender</string>
+
+    <string-array name="Gender_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

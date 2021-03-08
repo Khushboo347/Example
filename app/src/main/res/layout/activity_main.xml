@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#bbdefb"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/name"/>
+
+
+       <!-- <AutoCompleteTextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Year"
+            android:completionThreshold="1"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/username"/>-->
+
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"
+            android:padding="5dp"
+            android:layout_alignTop="@+id/year"
+            android:layout_alignBottom="@+id/year"
+            android:layout_alignRight="@+id/year"
+            android:src="@mipmap/baseline_arrow_drop_down_black_18dp"/>-->
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:hint="Gender"
+        android:layout_marginTop="30dp"
+        android:id="@+id/gen"
+        android:layout_below = "@+id/username"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <!--<androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/branch"
+        android:entries="@array/Branch_array"
+        android:prompt="@string/branch_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"
+        android:spinnerMode="dialog"
+        android:layout_below="@+id/username"
+        android:layout_toRightOf="@+id/year"/>-->
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/gender"
+        android:entries="@array/Gender_array"
+        android:prompt="@string/gender_name"
+        android:layout_marginTop="30dp"
+        android:spinnerMode="dialog"
+        android:layout_toRightOf="@+id/gen"
+        android:layout_below="@+id/username"/>
+
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/gender"/>
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/password"/>
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/confirmpassword"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+
+</RelativeLayout>
